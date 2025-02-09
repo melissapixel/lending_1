@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans";
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+header {
+  background: rgba(6, 7, 7, 0.85);
+  width: 100%;
+  font-size: 60px;
+}
+
+.greyContainer {
+  background: rgb(246, 246, 246);
+  width: 100%;
+}
+
+.containerContent {
+  max-width: 1205px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column img {
+  height: auto;
+  display: block;
+  padding-left: 200px;
+}
+
+.menu {
+  width: clamp(550x, 1000px, 1440px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.descriptionAboutCompany, .phone {
+  display: inline-block;
+  color: rgb(153, 153, 153);
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.descriptionAboutCompany {
+  padding-top: 5px;
+  margin-left: 25px;
+}
+
+.phone {
+  margin-left: 250px;
+}
+
+.searchButton {
+  margin-left: 20px;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-family: "Orenburg";
+  font-size: 60px;
+  line-height: 64px;
+  padding-top: 50px;
+  flex: 1;
+}
+
+.shower {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  flex: 1;
+}
+
+.price {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 112, 40);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  padding: 13px;
+  margin-bottom: -4px;
+  border: none;
+  border: 1px solid red;
+  border-radius: 2px;
+  z-index: 1;
+}
+.price::before {
+  content: "";
+  border-spacing: 10px;
+}
+
+.ul {
+  font-size: 20px;
+  color: rgb(123, 123, 123);
+  line-height: 20px;
+  padding-top: 50px;
+}
+.ul li {
+  padding: 16px;
+}
+.ul hr {
+  border: none;
+  width: 375px;
+  height: 1px;
+  position: relative;
+}
+.ul hr::before {
+  content: "";
+  background: linear-gradient(to right, rgb(75, 75, 75), rgba(38, 38, 37, 0));
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+
+.sectionAboutCompany {
+  background: rgb(246, 246, 246);
+}
+
+.descriptionAboutOficce {
+  max-width: 590px;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+.bigLetter {
+  font-size: 52px;
+  color: rgb(255, 112, 40);
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */
