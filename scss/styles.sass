@@ -1,0 +1,152 @@
+// COLOR GRADIENT
+$black-gradient:  rgba(6, 7, 7, 0.85)
+// COLOR
+$color-price: rgba(255, 112, 40, 1)
+$light-white-color__for-text: rgba(255, 255, 255, 1)
+$light-color__for-text: rgba(153, 153, 153, 1)
+$dark-color__for-text: rgba(123, 123, 123, 1)
+$greyBG: rgba(246, 246, 246, 1)
+// FOR FONT-FAMILY 
+$main-text__font: 'Orenburg'
+$text__font: 'PT Sans'
+// FOR FONT-SIZE
+$main-font-size: 60px
+$title-section__font-size: 36px
+$subtitle-section__font-size: 22px
+$description__font-size: 18px
+$little-description__font-size: 15px
+$main-price__font-size: 24px
+$discount__font-size: 20px
+$big-letter: 52px
+$for-ul__font-size: 20px
+
+// reset built-in styles
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: $text__font
+    overflow-x: hidden
+    overflow-y: hidden
+
+header
+    background: $black-gradient
+    // height: clamp(540px, 694px, 694px)
+    width: 100%
+    font-size: clamp($main-font-size / 2, $main-font-size, $main-font-size)
+.greyContainer
+    background: $greyBG
+    width: 100%
+.containerContent
+    max-width: 1205px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+.column
+    display: flex
+    flex-direction: column
+.column img
+    height: auto
+    display: block
+    padding-left: 200px
+.menu
+    width: clamp(550x, 1000px, 1440px)
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+.logo
+    display: inline-block
+
+.descriptionAboutCompany, .phone
+    display: inline-block
+    color: $light-color__for-text
+    font-size: $description__font-size
+    white-space: nowrap
+
+.descriptionAboutCompany
+    padding-top: 5px
+    margin-left: 25px
+.phone
+    margin-left: 250px
+.searchButton
+    margin-left: 20px
+
+.title
+    color: $light-white-color__for-text
+    font-family: $main-text__font
+    font-size: $main-font-size
+    line-height: 64px
+    padding-top: 50px
+    flex: 1
+    
+.shower
+    display: flex
+    justify-content: flex-end
+    position: relative
+    flex: 1
+
+
+
+
+
+
+    
+    // HELP ME HERE
+.price
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: $color-price
+    color: $light-white-color__for-text
+    font-size: $main-price__font-size
+    padding: 13px
+    margin-bottom: -4px
+
+    border: none
+    border: 1px solid red
+    border-radius: 2px
+
+    z-index: 1
+    &::before
+        content: ""
+        border-spacing: 10px
+.ul
+    font-size: $for-ul__font-size
+    color: $dark-color__for-text
+    line-height: 20px
+    padding-top: 50px
+    li
+        padding: 16px
+    hr
+        border: none
+        width: 375px
+        height: 1px
+        position: relative
+        &::before
+            content: ''
+            background: linear-gradient(to right, rgba(75, 75, 75, 1), rgba(38, 38, 37, 0))
+            left: 0
+            right: 0
+            top: 0
+            position: absolute
+            height: 100%
+            z-index: -1
+
+
+
+// SECOND SECTION
+.sectionAboutCompany
+    background: $greyBG
+.descriptionAboutOficce
+    max-width: 590px
+    line-height: 32px
+    font-size: $description__font-size
+.bigLetter
+    font-size: $big-letter
+    color: $color-price
+    display: inline-block
+    
