@@ -26,8 +26,6 @@ $for-ul__font-size: 20px
     padding: 0
     box-sizing: border-box
     font-family: $text__font
-    overflow-x: hidden
-    overflow-y: hidden
 
 header
     background: $black-gradient
@@ -85,35 +83,33 @@ header
 .shower
     display: flex
     justify-content: flex-end
-    position: relative
     flex: 1
 
+    .border-for-price
+        position: relative
+        width: 300px
+        height: 120px
+        top: -250px
+        left: 0px
+        border: 2px solid rgb(255, 120, 31)
+        padding: 5px 5px
+        z-index: 5
+        border-radius: 5px 5px
 
+        .price
+            background-color: rgb(255, 120, 31)
+            padding: 25px 20px
+            font-size: 58px
+            display: flex
+            justify-content: center
+            color: white
+            position: absolute
+            top: -10px
+            left: -10px
+            z-index: 10
+            border-radius: 5px 5px
+            
 
-
-
-
-    
-    // HELP ME HERE
-.price
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    background: $color-price
-    color: $light-white-color__for-text
-    font-size: $main-price__font-size
-    padding: 13px
-    margin-bottom: -4px
-
-    border: none
-    border: 1px solid red
-    border-radius: 2px
-
-    z-index: 1
-    &::before
-        content: ""
-        border-spacing: 10px
 .ul
     font-size: $for-ul__font-size
     color: $dark-color__for-text
